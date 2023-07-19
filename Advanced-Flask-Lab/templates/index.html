@@ -38,21 +38,33 @@
                 
                 <div>
                       <a href="">
-                        <img src="static/images/thumbs/01.jpg" alt="" />
-                        <h3>Caption... blah blah blah</h3>
+                        <img src="{{image_link}}" alt="" />
+                        <h3>{{user_bio}}</h3>
                       </a>
+                </div>
+                <div>
                 
                       <a href="">
-                        <img src="url_for('static',filename='images/thumbs/02.jpg')" alt="" />
+                        <img src=https://www.ubm-development.com/magazin/wp-content/uploads/2021/12/S_TernaryTower_2.jpg" alt="" />
                         <h3>Caption... blah blah blah</h3>
                       </a>
+
                 </div>    
                 <div>
                   <a href="">
-                        <img src="{{url_for('static',filename='images/thumbs/03.jpg')}}" alt="" />
+                        <img src="https://www.ubm-development.com/magazin/wp-content/uploads/2021/12/S_TernaryTower_2.jpg" alt="" />
                         <h3>Caption... blah blah blah</h3>
                       </a>
                 </div>  
+                {% for i in posts %}
+                <div>
+                	 <a href="">
+                        <img src="{{i}}" alt="" />
+                        <h3>{{posts[i]}}</h3>
+                      </a>
+                	
+                </div>
+                {% endfor %}
 
 							</section>
 
